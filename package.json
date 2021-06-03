@@ -1,0 +1,23 @@
+{
+    "name": "employee-tracker",
+    "version": "1.0.0",
+    "description": "employee SQL Database",
+    "main": "connection.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/graysonbloskas/employee-tracker.git"
+    },
+    "author": "Grayson Bloskas",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/graysonbloskas/employee-tracker/issues"
+    },
+    "homepage": "",
+    "dependencies": {
+        "inquirer": "^8.0.0",
+        "mysql": "^2.18.1"
+    }
+}
