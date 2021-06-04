@@ -1,3 +1,6 @@
+insert into manager(first_name,last_name,department_id)
+values ("Lyndon","Johnson",1),("Ashley","Bloskas", 2),("Justin","Bieber", 3),("Jason","Bourne",4);
+
 INSERT INTO department (departmentName)
 VALUES ("HR"), ("Sales"), ("Coding"), ("MIS");
 

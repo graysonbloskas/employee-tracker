@@ -3,6 +3,14 @@ CREATE DATABASE employee_db;
 
 USE employee_db;
 
+CREATE TABLE manager(
+    id INT NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(30),
+    last_name VARCHAR(30),
+    department_id INT,
+    PRIMARY KEY (id),
+    FOREIGN KEY (department_id) REFERENCES department(id)
+)
 
 CREATE TABLE department (
     id INT NOT NULL AUTO_INCREMENT,
