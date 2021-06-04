@@ -283,3 +283,56 @@ function deleteRole() {
         })
     })
 }
+
+const deleteEmployee = () => {
+    connection.query('SELECT * FROM employee', (err, res) => {
+        var employeeArr = res.map((employee) => {
+            return {
+                name: `${employee.first_name} ${employee.last_name}`,
+                value: employee.id,
+            }
+        })
+        inquirer
+        .prompt([
+            {
+                name: 'employeeDel',
+                message: 'Select the employee that got fired',
+                type: 'list',
+                choices: employeeArr
+            }
+        ])
+        .then((answers) => {
+            connection.query('DELETE FROM employee WHERE?', {id: `${answers.employeeDel}`}, (err, res) => {
+                console.table(res);
+                startTracker();
+            })
+        })
+    })
+}
+
+const deleteDepartment = () => {
+    connection.query('SELECT * FROM department', (err, res) => {
+        let departmentArr = res.map((department) => {
+            return {
+                name: department.name,
+                value: department.id
+            }
+        })
+        inquirer
+        .prompt ([
+            {
+                name: 'deptDel',
+                message: 'Select the department to delete',
+                type: 'list',
+                choices: departmentArr
+            }
+        ])
+        .then((answers) => {
+            connection.query('DELETE FROM department WHERE ?' , {id: `${answers.departmentDel}`}, (err, res) => {
+                console.table(res);
+                startTracker();
+            })
+        })
+    })
+}
+
