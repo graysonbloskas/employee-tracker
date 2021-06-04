@@ -2,6 +2,8 @@
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+# WATCH: VIDEO DEMONSTRATION
+https://drive.google.com/file/d/1bdo1fnEQkFNKgBjrHlH1IZcXadw7lbJN/view?usp=sharing
   ## Description 
 An app that allows manage a company of employees from the command line.
   ## Table of Contents 
