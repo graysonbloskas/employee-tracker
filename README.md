@@ -45,3 +45,6 @@ An app that allows manage a company of employees from the command line.
 
   # Working Commands Video
 
+https://user-images.githubusercontent.com/79467387/120734485-f0531200-c4b6-11eb-91b2-d8d7a1c15874.mov
+
+
